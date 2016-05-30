@@ -1,0 +1,21 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    # repository: alpine
+    repository: getourneau/alpine-bash-git
+inputs:
+  - name: hello
+# run:
+#   path: echo
+#   args: ["Hello", "World"]
+run:
+  # path: sh
+  # path: bash
+  # args:
+  # - -c
+  # - |
+  #   echo "Hello World!"
+  path: ./hello/hello.sh
+
